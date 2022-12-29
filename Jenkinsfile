@@ -1,11 +1,11 @@
 pipeline {
   agent any
+  
   environment {
        imagename = "janahdevops/august-docker"
        registryCredential = 'DockerHub'
        dockerImage = ''
            }
-          }
   stages {
     stage ('Build') {
       steps {
